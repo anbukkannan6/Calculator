@@ -7,6 +7,15 @@ let show = (num) => {
     console.log(eval("2" + "4"));
 }
 
+let clear = () => {
+    input.value = " "
+    console.log("Ima Working")
+}
+
+let dlt = ()=>{
+    input.value = input.value.slice(0,-1)
+}
+
 
 
 
@@ -17,7 +26,6 @@ let result = () => {
     input.value = eval(input.value);
 }
 
-let clear = () => {
-    input.value = " "
-    console.log("Ima Working")
-}
+
+
+

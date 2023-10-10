@@ -1,4 +1,51 @@
 *{
     background-color: coral;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    outline: none;
     
+    
+}
+/* MAIN CONTAINER */             /*Align-item----It only takes content space*/
+                                 /*Align-Content----It took entire sreen and get strach*/                           
+.mainCon{
+    display: flex;
+    justify-content: center;  /*row wise center*/
+    align-items: center; /* Row Wise Center---What is the difference between align-item:center and justify-content:Ceneter*/
+    height: 100vh;  /* height should be 100% of screen size*/
+    
+
+}
+.calulator{
+    display: grid;
+    grid-template-columns: repeat(4,70px); /*1st number of coloums,2nd size of coloums*/
+    border: 2px black solid;
+    border-radius: 30px;
+    background-color: gray;
+    padding: 15px;
+    box-shadow: inset 5px 5px 12px #ffffff,  /* Adding Shaddow to the container, INSERT means shadow effect in inside of the container------5px verical 5px horizontal 12 px blur*/
+                      5px 5px 12px black;
+    
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    border-radius: 30px;
+    color: grey;
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px; 
+    padding: 20px;
+}
+button{
+    height: 45px;
+    width: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 8px;
 }
